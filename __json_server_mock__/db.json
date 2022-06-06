@@ -1,3 +1,57 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": 1,
+      "name": "James Brown"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe"
+    },
+    {
+      "id": 3,
+      "name": "Mike White"
+    },
+    {
+      "id": 4,
+      "name": "Colin Han"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Training",
+      "personId": 1,
+      "organization": "HQ",
+      "created": 1604989757139
+    },
+    {
+      "id": 2,
+      "name": "Operation",
+      "personId": 2,
+      "organization": "HQ",
+      "created": 1604989757139
+    },
+    {
+      "id": 3,
+      "name": "Staff",
+      "personId": 2,
+      "organization": "HR",
+      "created": 1546300800000
+    },
+    {
+      "id": 4,
+      "name": "Warehouse",
+      "personId": 3,
+      "organization": "HQ",
+      "created": 1604980000011
+    },
+    {
+      "id": 5,
+      "name": "Payroll",
+      "personId": 4,
+      "organization": "HR",
+      "created": 1546900800000
+    }
+  ]
 }

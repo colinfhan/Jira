@@ -1,21 +1,7 @@
+import React from "react"
 import { useEffect, useState } from "react"
 
-export const SearchPanel = () => {
-    const [param, setParam] = useState({
-        name: '',
-        personId: ''
-    })
-    const [users, setUsers] = UseState([])
-    const [list, setList] = useState([])
-    
-    useEffect(() => {
-        fetch('').then(async response => {
-            if (response.ok) {
-                setList(await response.json())
-            }
-        })
-    }, [param])
-
+export const SearchPanel = ({users, param, setParam}) => {
     return <form action="">
         <input type="text" value={param.name} onChange={event => setParam({
             ...param,
@@ -25,9 +11,9 @@ export const SearchPanel = () => {
             ...param,
             personId: event.target.value
         })}>
-            <option value={''}>Manager</option>
+            <option value={''}>All manager</option>
             {
-                users.map(user => <option value={user.id}>{user.name}</option>)
+                users.map(user => <option key={user.id} value={user.id}>{user.name}</option>)
             }
         </select>
     </form>
